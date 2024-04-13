@@ -2,31 +2,49 @@
 
 自定义 订阅转换 配置转换 规则转换 的远程配置：
 
-https://ghraw.eu.org/zsokami/ACL4SSR/main/ACL4SSR_Online_Full_Mannix.ini
-
-短链：https://all.bz/config
+https://raw.githubusercontent.com/zsokami/ACL4SSR/main/ACL4SSR_Online_Full_Mannix.ini
 
 修改自 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini
 
----
+远程配置短链：`https://7.7.cr/config`
 
-使用 mannix 的订阅转换反代（自动去除无节点的分组，项目地址：<https://github.com/zsokami/subcvt-mannix>）：
+订阅转换短链（原订阅链接需 URL 编码）：
 
-`https://scmx.eu.org?url={原订阅链接}`
+- `https://7.7.cr/v1?url={原订阅链接}` (api.v1.mk)
+- `https://7.7.cr/dler?url={原订阅链接}` (api.dler.io)
+- `https://7.7.cr/scs?url={原订阅链接}` (api.subcsub.com)
+- `https://7.7.cr/tsu?url={原订阅链接}` (api.tsutsu.one)
 
-短链：`https://all.bz/scm?url={原订阅链接}`
+订阅转换反代（自动去除无节点的分组等功能，项目地址：<https://github.com/zsokami/subcvt-mannix>）：
 
----
+`https://c.7.cr?{原订阅链接}`
 
 ## ACL4SSR_Online_Mannix.ini
 
 去除国家/地区：
 
-https://ghraw.eu.org/zsokami/ACL4SSR/main/ACL4SSR_Online_Mannix.ini
+https://raw.githubusercontent.com/zsokami/ACL4SSR/main/ACL4SSR_Online_Mannix.ini
 
-短链：https://all.bz/config-nc
+远程配置短链：`https://7.7.cr/config-nc`
 
-dler 订阅转换短链：`https://all.bz/dler-nc?url={原订阅链接}`
+订阅转换短链（原订阅链接需 URL 编码）：
+
+- `https://7.7.cr/v1-nc?url={原订阅链接}` (api.v1.mk)
+- `https://7.7.cr/dler-nc?url={原订阅链接}` (api.dler.io)
+- `https://7.7.cr/scs-nc?url={原订阅链接}` (api.subcsub.com)
+- `https://7.7.cr/tsu-nc?url={原订阅链接}` (api.tsutsu.one)
+
+---
+
+### V3
+
+扩展 APP 广告拦截规则，对某些影视/动漫 APP 有加速奇效：
+
+https://raw.githubusercontent.com/zsokami/ACL4SSR/main/BanProgramAD1.list
+
+附 hosts 文件（自动更新）：
+
+https://raw.githubusercontent.com/zsokami/ACL4SSR/main/hosts
 
 ---
 
@@ -36,11 +54,11 @@ dler 订阅转换短链：`https://all.bz/dler-nc?url={原订阅链接}`
 
 **需去除订阅转换链接中的参数 `emoji=true/false` 才能生效**，参考例子：
 
-`https://api.dler.io/sub?target=clash&udp=true&scv=true&config=https://all.bz/config&url={原订阅链接}`
-
-短链：`https://all.bz/dler?url={原订阅链接}`
+`https://api.dler.io/sub?target=clash&udp=true&scv=true&config=https://raw.githubusercontent.com/zsokami/ACL4SSR/main/ACL4SSR_Online_Full_Mannix.ini&url={原订阅链接}`
 
 ---
+
+⚠ 重要！每个组名的**空格**后面都添加了一个**隐藏字符 \u200d** 用于防止与节点重名，改名需谨慎
 
 移除
 - 📢 谷歌FCM
@@ -76,12 +94,12 @@ dler 订阅转换短链：`https://all.bz/dler-nc?url={原订阅链接}`
 新增
 - 🇨🇳 中国 (含 🇭🇰 香港 🇹🇼 台湾)
 - 🎏 其他
-- 🤖 ‍OpenAI+Bing
+- 🤖 ‍AI
 
 url-test
 - 延迟测试链接 http://www.gstatic.com/generate_204 -> https://i.ytimg.com/generate_204
-- 间隔时间 300秒 -> 30秒
-- 容差 50毫秒
+- 间隔时间 300秒 -> 15/30秒
+- 容差 50/150毫秒 -> 100/300毫秒
 
 📺 ‍B站 默认选择 🇨🇳 ‍中国
 

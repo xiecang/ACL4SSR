@@ -12,19 +12,20 @@ from requests.adapters import HTTPAdapter
 from urllib3 import Retry
 
 SC_ALIASES_HOSTS = [
-    ('scm', 'scmx.eu.org'),
+    ('v1', 'api.v1.mk'),
     ('dler', 'api.dler.io'),
     ('scs', 'api.subcsub.com'),
+    ('tsu', 'api.tsutsu.one'),
 ]
 
 GITHUB_REPOSITORY = os.getenv('GITHUB_REPOSITORY')
 GITHUB_REF_NAME = os.getenv('GITHUB_REF_NAME')
 GITHUB_SHA = os.getenv('GITHUB_SHA')
 URL_SHORTENER_API_KEY = os.getenv('URL_SHORTENER_API_KEY')
-URL_SHORTENER_TYPE, URL_SHORTENER_HOST = 'B', 'all.bz'
-URL_SHORTENER_OPTIONS = {'host': URL_SHORTENER_HOST, 'api_key': URL_SHORTENER_API_KEY, 'domain_id': 1}
+URL_SHORTENER_TYPE, URL_SHORTENER_HOST = 'Shortio', 'api.short.io'
+URL_SHORTENER_OPTIONS = {'host': URL_SHORTENER_HOST, 'api_key': URL_SHORTENER_API_KEY, 'domain': '7.7.cr'}
 
-GITHUB_REPOSITORY_RAW_URL_PREFIX = f'https://ghraw.eu.org/{GITHUB_REPOSITORY}/'
+GITHUB_REPOSITORY_RAW_URL_PREFIX = f'https://raw.githubusercontent.com/{GITHUB_REPOSITORY}/'
 
 ini_file_name = next((f for f in os.listdir() if f.endswith('.ini') and 'Full' in f), None)
 ini_file_name_nocountry = next((f for f in os.listdir() if f.endswith('.ini') and 'Full' not in f), None)
