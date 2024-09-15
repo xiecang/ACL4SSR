@@ -12,10 +12,10 @@ from requests.adapters import HTTPAdapter
 from urllib3 import Retry
 
 SC_ALIASES_HOSTS = [
-    ('v1', 'api.v1.mk'),
+    ('v1', 'url.v1.mk'),
     ('dler', 'api.dler.io'),
-    ('scs', 'api.subcsub.com'),
-    ('tsu', 'api.tsutsu.one'),
+    ('id9', 'sub.id9.cc'),
+    ('0z', 'api-suc.0z.gs'),
 ]
 
 GITHUB_REPOSITORY = os.getenv('GITHUB_REPOSITORY')
@@ -23,7 +23,7 @@ GITHUB_REF_NAME = os.getenv('GITHUB_REF_NAME')
 GITHUB_SHA = os.getenv('GITHUB_SHA')
 URL_SHORTENER_API_KEY = os.getenv('URL_SHORTENER_API_KEY')
 URL_SHORTENER_TYPE, URL_SHORTENER_HOST = 'Shortio', 'api.short.io'
-URL_SHORTENER_OPTIONS = {'host': URL_SHORTENER_HOST, 'api_key': URL_SHORTENER_API_KEY, 'domain': '7.7.cr'}
+URL_SHORTENER_OPTIONS = {'host': URL_SHORTENER_HOST, 'api_key': URL_SHORTENER_API_KEY, 'domain': 'mnnx.cc'}
 
 GITHUB_REPOSITORY_RAW_URL_PREFIX = f'https://raw.githubusercontent.com/{GITHUB_REPOSITORY}/'
 

@@ -6,18 +6,19 @@ https://raw.githubusercontent.com/zsokami/ACL4SSR/main/ACL4SSR_Online_Full_Manni
 
 修改自 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini
 
-远程配置短链：`https://7.7.cr/config`
+远程配置短链：`https://mnnx.cc/config`
 
 订阅转换短链（原订阅链接需 URL 编码）：
 
-- `https://7.7.cr/v1?url={原订阅链接}` (api.v1.mk)
-- `https://7.7.cr/dler?url={原订阅链接}` (api.dler.io)
-- `https://7.7.cr/scs?url={原订阅链接}` (api.subcsub.com)
-- `https://7.7.cr/tsu?url={原订阅链接}` (api.tsutsu.one)
+- `https://mnnx.cc/v1?url={原订阅链接}` (url.v1.mk)
+- `https://mnnx.cc/dler?url={原订阅链接}` (api.dler.io)
+- `https://mnnx.cc/id9?url={原订阅链接}` (sub.id9.cc)
+- `https://mnnx.cc/0z?url={原订阅链接}` (api-suc.0z.gs)
+- `https://max.mnnx.cc/{自定义后端地址}?url={原订阅链接}`
 
 订阅转换反代（自动去除无节点的分组等功能，项目地址：<https://github.com/zsokami/subcvt-mannix>）：
 
-`https://c.7.cr?{原订阅链接}`
+`https://scmx.cc/?url={原订阅链接}`
 
 ## ACL4SSR_Online_Mannix.ini
 
@@ -25,14 +26,15 @@ https://raw.githubusercontent.com/zsokami/ACL4SSR/main/ACL4SSR_Online_Full_Manni
 
 https://raw.githubusercontent.com/zsokami/ACL4SSR/main/ACL4SSR_Online_Mannix.ini
 
-远程配置短链：`https://7.7.cr/config-nc`
+远程配置短链：`https://mnnx.cc/config-nc`
 
 订阅转换短链（原订阅链接需 URL 编码）：
 
-- `https://7.7.cr/v1-nc?url={原订阅链接}` (api.v1.mk)
-- `https://7.7.cr/dler-nc?url={原订阅链接}` (api.dler.io)
-- `https://7.7.cr/scs-nc?url={原订阅链接}` (api.subcsub.com)
-- `https://7.7.cr/tsu-nc?url={原订阅链接}` (api.tsutsu.one)
+- `https://mnnx.cc/v1-nc?url={原订阅链接}` (url.v1.mk)
+- `https://mnnx.cc/dler-nc?url={原订阅链接}` (api.dler.io)
+- `https://mnnx.cc/id9-nc?url={原订阅链接}` (sub.id9.cc)
+- `https://mnnx.cc/0z-nc?url={原订阅链接}` (api-suc.0z.gs)
+- `https://min.mnnx.cc/{自定义后端地址}?url={原订阅链接}`
 
 ---
 
@@ -100,8 +102,6 @@ url-test
 - 延迟测试链接 http://www.gstatic.com/generate_204 -> https://i.ytimg.com/generate_204
 - 间隔时间 300秒 -> 15/30秒
 - 容差 50/150毫秒 -> 100/300毫秒
-
-📺 ‍B站 默认选择 🇨🇳 ‍中国
 
 正则匹配大小写、简繁体，更好的匹配中转、IPLC节点
 
