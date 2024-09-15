@@ -1,4 +1,4 @@
 DOMAIN-SUFFIX,kkgithub.com
 DOMAIN-SUFFIX,cocopilot.org
 DOMAIN-SUFFIX,rawchat.cc
-IP-CIDR,142.250.157.188/32
+IP-CIDR,142.250.157.188/32,no-resolve
