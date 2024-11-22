@@ -18,7 +18,7 @@ https://raw.githubusercontent.com/zsokami/ACL4SSR/main/ACL4SSR_Online_Full_Manni
 
 订阅转换反代（自动去除无节点的分组等功能，项目地址：<https://github.com/zsokami/subcvt-mannix>）：
 
-`https://scmx.cc/?url={原订阅链接}`
+`https://sc.mnnx.cc/?url={原订阅链接}`
 
 ## ACL4SSR_Online_Mannix.ini
 
@@ -36,11 +36,42 @@ https://raw.githubusercontent.com/zsokami/ACL4SSR/main/ACL4SSR_Online_Mannix.ini
 - `https://mnnx.cc/0z-nc?url={原订阅链接}` (api-suc.0z.gs)
 - `https://min.mnnx.cc/{自定义后端地址}?url={原订阅链接}`
 
+## ACL4SSR_Online_(Full_)Mannix_No_DNS_Leak.ini
+
+无 DNS 泄漏：
+
+https://raw.githubusercontent.com/zsokami/ACL4SSR/main/ACL4SSR_Online_Full_Mannix_No_DNS_Leak.ini
+
+https://raw.githubusercontent.com/zsokami/ACL4SSR/main/ACL4SSR_Online_Mannix_No_DNS_Leak.ini
+
+和原配置只有一行差异：
+
+```diff
+- ruleset=🛩️ ‍墙内,[]GEOIP,CN
++ ruleset=🛩️ ‍墙内,[]GEOIP,CN,no-resolve
+```
+
+原配置不在已知名单中的（国内外）域名会先通过当地 DNS 服务器解析一次。
+
+添加 no-resolve 后，不在已知名单中的（国内外）域名将直接✈️ 起飞。
+
+---
+
+### V4
+
+性能优化：
+
+原版订阅转换后端使用本配置时，若节点过多，转换速度很慢。
+
+建议使用性能优化后端（<https://github.com/zsokami/subconverter>，暂无公共服务）
+
+该后端通过预编译和缓存正则，大幅提升转换速度。
+
 ---
 
 ### V3
 
-扩展 APP 广告拦截规则，对某些影视/动漫 APP 有加速奇效：
+添加某些影视/动漫 APP 广告拦截规则：
 
 https://raw.githubusercontent.com/zsokami/ACL4SSR/main/BanProgramAD1.list
 
@@ -103,6 +134,6 @@ url-test
 - 间隔时间 300秒 -> 15/30秒
 - 容差 50/150毫秒 -> 100/300毫秒
 
-正则匹配大小写、简繁体，更好的匹配中转、IPLC节点
+正则匹配大小写、简繁体，更好地匹配中转、IPLC节点
 
 LocalAreaNetwork.list 使用 DIRECT
