@@ -1,4 +1,8 @@
+🎉船新项目：[ACL4SSR Mannix 订阅转换极速版](https://github.com/zsokami/cvt)
+
 ## ACL4SSR_Online_Full_Mannix.ini
+
+[<img src="https://api.gitsponsors.com/api/badge/img?id=549654581" height="20">](https://api.gitsponsors.com/api/badge/link?p=pr6qCfTme8e2CCbhuDS8Hkx/JTTbgiRQecJl/RFJSpXcOJ7E3FubyNTjk94vm2TV+anUDKI7JdNx2qOCbDqljcT8eC8px0dESd27Isy+dwNNv1cXRMUwdnkXw04mGJFb)
 
 自定义 订阅转换 配置转换 规则转换 的远程配置：
 
@@ -10,11 +14,10 @@ https://raw.githubusercontent.com/zsokami/ACL4SSR/main/ACL4SSR_Online_Full_Manni
 
 订阅转换短链（原订阅链接需 URL 编码）：
 
-- `https://mnnx.cc/v1?url={原订阅链接}` (url.v1.mk)
-- `https://mnnx.cc/dler?url={原订阅链接}` (api.dler.io)
-- `https://mnnx.cc/id9?url={原订阅链接}` (sub.id9.cc)
+- `https://mnnx.cc/v1?url={原订阅链接}` (api.v1.mk)
+- `https://mnnx.cc/2c?url={原订阅链接}` (api.2c.lol)
 - `https://mnnx.cc/0z?url={原订阅链接}` (api-suc.0z.gs)
-- `https://max.mnnx.cc/{自定义后端地址}?url={原订阅链接}`
+- `https://mnnx.cc/{自定义后端地址}?url={原订阅链接}`
 
 订阅转换反代（自动去除无节点的分组等功能，项目地址：<https://github.com/zsokami/subcvt-mannix>）：
 
@@ -26,14 +29,13 @@ https://raw.githubusercontent.com/zsokami/ACL4SSR/main/ACL4SSR_Online_Full_Manni
 
 https://raw.githubusercontent.com/zsokami/ACL4SSR/main/ACL4SSR_Online_Mannix.ini
 
-远程配置短链：`https://mnnx.cc/config-nc`
+远程配置短链：`https://min.mnnx.cc/config`
 
 订阅转换短链（原订阅链接需 URL 编码）：
 
-- `https://mnnx.cc/v1-nc?url={原订阅链接}` (url.v1.mk)
-- `https://mnnx.cc/dler-nc?url={原订阅链接}` (api.dler.io)
-- `https://mnnx.cc/id9-nc?url={原订阅链接}` (sub.id9.cc)
-- `https://mnnx.cc/0z-nc?url={原订阅链接}` (api-suc.0z.gs)
+- `https://min.mnnx.cc/v1?url={原订阅链接}` (api.v1.mk)
+- `https://min.mnnx.cc/2c?url={原订阅链接}` (api.2c.lol)
+- `https://min.mnnx.cc/0z?url={原订阅链接}` (api-suc.0z.gs)
 - `https://min.mnnx.cc/{自定义后端地址}?url={原订阅链接}`
 
 ## ACL4SSR_Online_(Full_)Mannix_No_DNS_Leak.ini
@@ -42,11 +44,19 @@ https://raw.githubusercontent.com/zsokami/ACL4SSR/main/ACL4SSR_Online_Mannix.ini
 
 https://raw.githubusercontent.com/zsokami/ACL4SSR/main/ACL4SSR_Online_Full_Mannix_No_DNS_Leak.ini
 
-`https://mnnx.cc/config-ndl`
+- `https://ndl.mnnx.cc/config`
+- `https://ndl.mnnx.cc/v1?url={原订阅链接}` (api.v1.mk)
+- `https://ndl.mnnx.cc/2c?url={原订阅链接}` (api.2c.lol)
+- `https://ndl.mnnx.cc/0z?url={原订阅链接}` (api-suc.0z.gs)
+- `https://ndl.mnnx.cc/{自定义后端地址}?url={原订阅链接}`
 
 https://raw.githubusercontent.com/zsokami/ACL4SSR/main/ACL4SSR_Online_Mannix_No_DNS_Leak.ini
 
-`https://mnnx.cc/config-nc-ndl`
+- `https://minndl.mnnx.cc/config`
+- `https://minndl.mnnx.cc/v1?url={原订阅链接}` (api.v1.mk)
+- `https://minndl.mnnx.cc/2c?url={原订阅链接}` (api.2c.lol)
+- `https://minndl.mnnx.cc/0z?url={原订阅链接}` (api-suc.0z.gs)
+- `https://minndl.mnnx.cc/{自定义后端地址}?url={原订阅链接}`
 
 和原配置只有一行差异：
 
@@ -61,9 +71,15 @@ https://raw.githubusercontent.com/zsokami/ACL4SSR/main/ACL4SSR_Online_Mannix_No_
 
 ---
 
-### V4
+### 性能优化 2
 
-性能优化：
+🎉船新项目：[ACL4SSR Mannix 订阅转换极速版](https://github.com/zsokami/cvt)
+
+后端：`https://arx.cc/{原订阅链接}`
+
+前端：<https://sub.com.mp>
+
+### 性能优化 1
 
 原版订阅转换后端使用本配置时，若节点过多，转换速度很慢。
 
@@ -141,3 +157,5 @@ url-test
 正则匹配大小写、简繁体，更好地匹配中转、IPLC节点
 
 LocalAreaNetwork.list 使用 DIRECT
+
+移除 Download.list
